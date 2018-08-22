@@ -14,6 +14,6 @@
 }
 
 + (void)initialize{
-    NSLog(@"%s",__func__);    //initialized函数没有执行
+    NSLog(@"%s",__func__);    //initialized函数执行了
 }
 @end
