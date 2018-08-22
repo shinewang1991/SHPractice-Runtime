@@ -1,17 +1,16 @@
 //
-//  Person.m
+//  Son.m
 //  SHPractice-Runtime
 //
 //  Created by shine on 2018/8/22.
 //  Copyright © 2018 shine. All rights reserved.
 //
 
-#import "Person.h"
+#import "Son.h"
 
-@implementation Person
-
+@implementation Son
 + (void)load{
-    NSLog(@"%s",__func__); 
+    NSLog(@"%s",__func__);
 }
 
 + (void)initialize{

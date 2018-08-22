@@ -7,19 +7,13 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "Person.h"
+#import "Son.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         NSLog(@"Hello, World!");
-        Person *p = [[Person alloc] init];
-        
-        /*输出
-        2018-08-22 13:32:10.563180+0800 SHPractice-Runtime[39548:829021] +[Person(testB) load]
-        2018-08-22 13:32:10.563394+0800 SHPractice-Runtime[39548:829021] +[Person(testA) load]
-        2018-08-22 13:32:10.563440+0800 SHPractice-Runtime[39548:829021] Hello, World!
-        2018-08-22 13:32:10.563479+0800 SHPractice-Runtime[39548:829021] +[Person(testA) initialize]
-         */
+//        Person *p = [[Person alloc] init];  //只会执行person的initalze函数
+        Son *p = [[Son alloc] init];    //会先执行person的initialze函数，再执行son的initialze函数
     }
     return 0;
 }

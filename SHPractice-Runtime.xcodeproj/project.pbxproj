@@ -11,6 +11,7 @@
 		14001E51212D0E5400DB9361 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 14001E50212D0E5400DB9361 /* Person.m */; };
 		14001E5A212D0EEA00DB9361 /* Person+testA.m in Sources */ = {isa = PBXBuildFile; fileRef = 14001E59212D0EEA00DB9361 /* Person+testA.m */; };
 		14001E5D212D0EF400DB9361 /* Person+testB.m in Sources */ = {isa = PBXBuildFile; fileRef = 14001E5C212D0EF400DB9361 /* Person+testB.m */; };
+		14001E60212D31A600DB9361 /* Son.m in Sources */ = {isa = PBXBuildFile; fileRef = 14001E5F212D31A600DB9361 /* Son.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -34,6 +35,8 @@
 		14001E59212D0EEA00DB9361 /* Person+testA.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Person+testA.m"; sourceTree = "<group>"; };
 		14001E5B212D0EF400DB9361 /* Person+testB.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Person+testB.h"; sourceTree = "<group>"; };
 		14001E5C212D0EF400DB9361 /* Person+testB.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Person+testB.m"; sourceTree = "<group>"; };
+		14001E5E212D31A600DB9361 /* Son.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Son.h; sourceTree = "<group>"; };
+		14001E5F212D31A600DB9361 /* Son.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Son.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +72,8 @@
 				14001E48212D0E2D00DB9361 /* main.m */,
 				14001E4F212D0E5400DB9361 /* Person.h */,
 				14001E50212D0E5400DB9361 /* Person.m */,
+				14001E5E212D31A600DB9361 /* Son.h */,
+				14001E5F212D31A600DB9361 /* Son.m */,
 				14001E58212D0EEA00DB9361 /* Person+testA.h */,
 				14001E59212D0EEA00DB9361 /* Person+testA.m */,
 				14001E5B212D0EF400DB9361 /* Person+testB.h */,
@@ -134,6 +139,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				14001E51212D0E5400DB9361 /* Person.m in Sources */,
+				14001E60212D31A600DB9361 /* Son.m in Sources */,
 				14001E5D212D0EF400DB9361 /* Person+testB.m in Sources */,
 				14001E5A212D0EEA00DB9361 /* Person+testA.m in Sources */,
 				14001E49212D0E2D00DB9361 /* main.m in Sources */,
