@@ -1,5 +1,5 @@
 //
-//  main.m
+//  Person.h
 //  SHPractice-Runtime
 //
 //  Created by shine on 2018/8/22.
@@ -8,9 +8,6 @@
 
 #import <Foundation/Foundation.h>
 
-int main(int argc, const char * argv[]) {
-    @autoreleasepool {
-        NSLog(@"Hello, World!");
-    }
-    return 0;
-}
+@interface Person : NSObject
+
+@end
