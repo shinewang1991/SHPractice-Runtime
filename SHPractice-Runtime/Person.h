@@ -9,6 +9,5 @@
 #import <Foundation/Foundation.h>
 
 @interface Person : NSObject
-+ (void)load;
-+ (void)initialize;
+- (void)eat;
 @end

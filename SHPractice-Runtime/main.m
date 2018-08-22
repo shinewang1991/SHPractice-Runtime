@@ -12,8 +12,8 @@
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         NSLog(@"Hello, World!");
-//        Person *p = [[Person alloc] init];  //只会执行person的initalze函数
-        Son *p = [[Son alloc] init];    //会先执行person的initialze函数，再执行son的initialze函数
+        Person *p = [[Person alloc] init];
+        [p eat];    //这里的eat方法已经被替换成testEat方法了。这就是method swizzing.
     }
     return 0;
 }

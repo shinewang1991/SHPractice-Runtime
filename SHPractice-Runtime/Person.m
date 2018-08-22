@@ -9,12 +9,7 @@
 #import "Person.h"
 
 @implementation Person
-
-+ (void)load{
-    NSLog(@"%s",__func__); 
-}
-
-+ (void)initialize{
+- (void)eat{
     NSLog(@"%s",__func__);
 }
 @end
