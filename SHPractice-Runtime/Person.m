@@ -7,6 +7,7 @@
 //
 
 #import "Person.h"
+#import "Pet.h"
 #import <objc/runtime.h>
 //#import <objc/message.h>
 
@@ -17,16 +18,26 @@ void dynamicMethodIMP(id self, SEL _cmd){
 
 @implementation Person
 
+- (instancetype)init{
+    if(self = [super init]){
+        Pet *pet = [[Pet alloc] init];
+        self.pet = pet;
+    }
+    return self;
+}
+
 + (BOOL)resolveClassMethod:(SEL)sel{
-    
     return [super resolveClassMethod:sel];
 }
 
 + (BOOL)resolveInstanceMethod:(SEL)sel{
-    if(sel == @selector(eat)){
-        class_addMethod([self class], sel, (IMP)dynamicMethodIMP, "v@:");
-        return YES;
-    }
     return [super resolveInstanceMethod:sel];
+}
+
+- (id)forwardingTargetForSelector:(SEL)aSelector{
+    if([self.pet respondsToSelector:aSelector]){
+        return self.pet;
+    }
+    return nil;
 }
 @end

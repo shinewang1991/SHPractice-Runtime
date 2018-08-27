@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		14001E49212D0E2D00DB9361 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 14001E48212D0E2D00DB9361 /* main.m */; };
 		14001E51212D0E5400DB9361 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 14001E50212D0E5400DB9361 /* Person.m */; };
+		14EF4E792133FDAE0075D1DD /* Pet.m in Sources */ = {isa = PBXBuildFile; fileRef = 14EF4E782133FDAE0075D1DD /* Pet.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,6 +29,8 @@
 		14001E48212D0E2D00DB9361 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		14001E4F212D0E5400DB9361 /* Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
 		14001E50212D0E5400DB9361 /* Person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		14EF4E772133FDAE0075D1DD /* Pet.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Pet.h; sourceTree = "<group>"; };
+		14EF4E782133FDAE0075D1DD /* Pet.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Pet.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +66,8 @@
 				14001E48212D0E2D00DB9361 /* main.m */,
 				14001E4F212D0E5400DB9361 /* Person.h */,
 				14001E50212D0E5400DB9361 /* Person.m */,
+				14EF4E772133FDAE0075D1DD /* Pet.h */,
+				14EF4E782133FDAE0075D1DD /* Pet.m */,
 			);
 			path = "SHPractice-Runtime";
 			sourceTree = "<group>";
@@ -123,6 +128,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				14EF4E792133FDAE0075D1DD /* Pet.m in Sources */,
 				14001E51212D0E5400DB9361 /* Person.m in Sources */,
 				14001E49212D0E2D00DB9361 /* main.m in Sources */,
 			);
