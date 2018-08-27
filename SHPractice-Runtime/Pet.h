@@ -10,4 +10,5 @@
 
 @interface Pet : NSObject
 - (void)eat;
+- (void)drink;
 @end

@@ -35,9 +35,20 @@ void dynamicMethodIMP(id self, SEL _cmd){
 }
 
 - (id)forwardingTargetForSelector:(SEL)aSelector{
-    if([self.pet respondsToSelector:aSelector]){
-        return self.pet;
-    }
+//    if([self.pet respondsToSelector:aSelector]){
+//        return self.pet;
+//    }
     return nil;
 }
+
+- (NSMethodSignature *)methodSignatureForSelector:(SEL)aSelector{
+    NSMethodSignature *sig = [Pet instanceMethodSignatureForSelector:@selector(drink)];
+    return sig;
+}
+
+- (void)forwardInvocation:(NSInvocation *)anInvocation{
+    [anInvocation setSelector:@selector(drink)];
+    [anInvocation invokeWithTarget:[Pet new]];
+}
+
 @end

@@ -12,4 +12,8 @@
 - (void)eat{
     NSLog(@"%s",__func__);
 }
+
+- (void)drink{
+    NSLog(@"%s",__func__);
+}
 @end
