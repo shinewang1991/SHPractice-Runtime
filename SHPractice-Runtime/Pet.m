@@ -9,8 +9,8 @@
 #import "Pet.h"
 
 @implementation Pet
-- (void)eat{
-    NSLog(@"%s",__func__);
+- (void)eat:(NSString *)food{
+    NSLog(@"%s---%@",__func__,food);
 }
 
 - (void)drink{

@@ -9,6 +9,6 @@
 #import <Foundation/Foundation.h>
 
 @interface Pet : NSObject
-- (void)eat;
+- (void)eat:(NSString *)food;
 - (void)drink;
 @end
