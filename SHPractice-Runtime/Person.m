@@ -42,8 +42,11 @@ void dynamicMethodIMP(id self, SEL _cmd){
 }
 
 - (NSMethodSignature *)methodSignatureForSelector:(SEL)aSelector{
-    NSMethodSignature *sig = [Pet instanceMethodSignatureForSelector:@selector(drink)];
-    return sig;
+    if(aSelector == @selector(eat)){
+        NSMethodSignature *sig = [Pet instanceMethodSignatureForSelector:@selector(eat)];
+        return sig;
+    }
+    return nil;
 }
 
 - (void)forwardInvocation:(NSInvocation *)anInvocation{
